@@ -1,42 +1,86 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@font-face {
+    font-family: Poppins;
+    src: url('./assets/fonts/Poppins-Regular.woff') format('woff');
   }
-  to {
-    transform: rotate(360deg);
+  
+  @font-face {
+    font-family: Poppins-Light;
+    src: url('./assets/fonts/Poppins-Light.woff') format('woff');
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  @font-face {
+    font-family: Poppins-Italic;
+    src: url('./assets/fonts/Poppins-Italic.woff') format('woff');
   }
-}
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('./assets/fonts/Poppins-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: Poppins-BoldItalic;
+    src:  url('./assets/fonts/Poppins-BoldItalic.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: Poppins-SimiBold;
+    src: url('./assets/fonts/Poppins-SemiBold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: Poppins-SimiBoldItalic;
+    src: url('./assets/fonts/Poppins-SemiBoldItalic.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: Poppins-LightItalic;
+    src:  url('./assets/fonts/Poppins-LightItalic.woff') format('woff');
+  }
 
-.card {
-  padding: 2em;
-}
+  :root{
+    /* text colors */
+    --text-gray: #808291;
+    --text-white: #f8f9fa;
+    --text-light: #f6f6f6;
+    --text-dark: #1A3260;
+    --text-dark2: #1A3760D4;
+    --text-red: #ff4d6d;
+    --box-shadow: 0px 0px 50px 0px rgb(0 0 0 /10%);
+    --bg-blue: rgb(171, 248, 238);
+    --bg-red: rgb(249, 162, 178);
+    --bg-yellow: rgb(253, 254, 207);
+    --bg-purple: rgb(229, 210, 244);
+  
+    /* gradient colors */
+    --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
+    --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
+    --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  html, .App, .content {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .App {
+    display: flex;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e0e0e0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-track:hover {
+    background: #555;
+  }
