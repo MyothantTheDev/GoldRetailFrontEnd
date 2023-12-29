@@ -1,86 +1,94 @@
 @font-face {
-    font-family: Poppins;
-    src: url('./assets/fonts/Poppins-Regular.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-Light;
-    src: url('./assets/fonts/Poppins-Light.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-Italic;
-    src: url('./assets/fonts/Poppins-Italic.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-Bold;
-    src: url('./assets/fonts/Poppins-Bold.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-BoldItalic;
-    src:  url('./assets/fonts/Poppins-BoldItalic.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-SimiBold;
-    src: url('./assets/fonts/Poppins-SemiBold.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-SimiBoldItalic;
-    src: url('./assets/fonts/Poppins-SemiBoldItalic.woff') format('woff');
-  }
-  
-  @font-face {
-    font-family: Poppins-LightItalic;
-    src:  url('./assets/fonts/Poppins-LightItalic.woff') format('woff');
-  }
+  font-family: Poppins;
+  src: url('./assets/fonts/Poppins-Regular.woff') format('woff');
+}
 
-  :root{
-    /* text colors */
-    --text-gray: #808291;
-    --text-white: #f8f9fa;
-    --text-light: #f6f6f6;
-    --text-dark: #1A3260;
-    --text-dark2: #1A3760D4;
-    --text-red: #ff4d6d;
-    --box-shadow: 0px 0px 50px 0px rgb(0 0 0 /10%);
-    --bg-blue: rgb(171, 248, 238);
-    --bg-red: rgb(249, 162, 178);
-    --bg-yellow: rgb(253, 254, 207);
-    --bg-purple: rgb(229, 210, 244);
-  
-    /* gradient colors */
-    --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
-    --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
-    --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
-  }
+@font-face {
+  font-family: Poppins-Light;
+  src: url('./assets/fonts/Poppins-Light.woff') format('woff');
+}
 
-  html, .App, .content {
-    height: 100%;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-  }
+@font-face {
+  font-family: Poppins-Italic;
+  src: url('./assets/fonts/Poppins-Italic.woff') format('woff');
+}
 
-  .App {
-    display: flex;
-    position: relative;
-  }
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('./assets/fonts/Poppins-Bold.woff') format('woff');
+}
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+@font-face {
+  font-family: Poppins-BoldItalic;
+  src:  url('./assets/fonts/Poppins-BoldItalic.woff') format('woff');
+}
 
-  ::-webkit-scrollbar-track {
-    background: #e0e0e0;
-  }
+@font-face {
+  font-family: Poppins-SimiBold;
+  src: url('./assets/fonts/Poppins-SemiBold.woff') format('woff');
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
+@font-face {
+  font-family: Poppins-SimiBoldItalic;
+  src: url('./assets/fonts/Poppins-SemiBoldItalic.woff') format('woff');
+}
 
-  ::-webkit-scrollbar-track:hover {
-    background: #555;
-  }
+@font-face {
+  font-family: Poppins-LightItalic;
+  src:  url('./assets/fonts/Poppins-LightItalic.woff') format('woff');
+}
+
+:root{
+  /* text colors */
+  --text-gray: #808291;
+  --text-white: #f8f9fa;
+  --text-light: #f6f6f6;
+  --text-dark: #1A3260;
+  --text-dark2: #1A3760D4;
+  --text-red: #ff4d6d;
+  --box-shadow: 0px 0px 50px 0px rgb(0 0 0 /10%);
+  --bg-blue: rgb(171, 248, 238);
+  --bg-red: rgb(249, 162, 178);
+  --bg-yellow: rgb(253, 254, 207);
+  --bg-purple: rgb(229, 210, 244);
+
+  /* gradient colors */
+  --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
+  --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
+  --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, .App, .content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}
