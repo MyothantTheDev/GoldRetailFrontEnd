@@ -98,7 +98,7 @@ const SideBar = () => {
             {/* Menu Items */}
           <Box paddingLeft={ isCollapsed ? undefined : "10%"}>
             <Item title="Home" to="/account/admin" icon={<HomeOutlinedIcon />} selected={selected} setSelected={setSelected}/>
-            <Item title="User" to="/account/admin/students" icon={<Groups2OutlinedIcon />} selected={selected} setSelected={setSelected}/>
+            <Item title="User" to="/account/admin/create" icon={<Groups2OutlinedIcon />} selected={selected} setSelected={setSelected}/>
           </Box>
         </Menu>
       </ProSidebar>

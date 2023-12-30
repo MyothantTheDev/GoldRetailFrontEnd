@@ -16,16 +16,16 @@ const TopBar = () => {
   const colorMode = useContext(ColorModeContext);
 
   const dispatch = useDispatch();
-  const { isAuthenticated } = useSelector(state => state.auth);
+//   const { isAuthenticated } = useSelector(state => state.auth);
   const logoutHandler = () => {
     dispatch(logout());
   }
 
-  useEffect( () => {
-    if (!isAuthenticated) {
-      <Navigate to='/' />
-    }
-  })
+//   useEffect( () => {
+//     if (!isAuthenticated) {
+//       <Navigate to='/' />
+//     }
+//   })
 
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
