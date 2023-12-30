@@ -64,6 +64,11 @@
   box-sizing: border-box;
 }
 
+.app {
+  height: 100%;
+  width: 100%;
+}
+
 html, .App, .content {
   height: 100%;
   width: 100%;
@@ -95,7 +100,8 @@ html, .App, .content {
 
 .Home {
   height: 100%;
-  width: 100%;
+  display: flex;
+  min-height: 1100px;
 }
 
 .Content {
@@ -104,9 +110,4 @@ html, .App, .content {
 
 .pro-sidebar {
   background-color: #353535 !important;
-}
-
-.Home{
-  display: flex;
-  position: relative;
 }
