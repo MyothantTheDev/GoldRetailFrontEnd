@@ -19,7 +19,7 @@ const initialValues = {
 
 const emailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-const studentSchema = yup.object().shape({
+const userSchema = yup.object().shape({
   firstName: yup.string().optional(),
   lastName: yup.string().optional(),
   email: yup.string().matches(emailRegExp).required('required'),
@@ -44,7 +44,7 @@ const NewUser = () => {
         <Title title="Create User" subtitle="Create New User" />
       </Box>
       <Box m="20px" >
-        <Formik onSubmit={handleFormSubmit} initialValues={initialValues} validationSchema={studentSchema}>
+        <Formik onSubmit={handleFormSubmit} initialValues={initialValues} validationSchema={userSchema}>
           {({values, errors, touched, handleBlur, handleChange, handleSubmit}) => (
             <form onSubmit={handleSubmit} encType="application/json" >
               <Box display='grid' gap="30px" gridTemplateColumns="repeat(4, minmax(0, 1fr))"
