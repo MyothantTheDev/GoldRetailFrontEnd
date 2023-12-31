@@ -111,3 +111,13 @@ html, .App, .content {
 .pro-sidebar {
   background-color: #353535 !important;
 }
+
+.report {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.lineDevider {
+  margin-bottom: 10px;
+}
