@@ -22,7 +22,7 @@ const initialValues = {
 }
 
 const saleSchema = yup.object().shape({
-  name: yup.number().required('required'),
+  name: yup.string().required('required'),
   type: yup.string().required('required'),
   weight: yup.object().shape(
     {
