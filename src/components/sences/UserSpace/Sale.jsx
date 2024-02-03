@@ -10,6 +10,7 @@ import Title from "../../Layout/Header";
 import { Label } from "@mui/icons-material";
 
 const initialValues = {
+  buyerName: '',
   price: 0,
   weight: {weight1: 0, weight2: 0, weight3: 0},
   encount: {weight1: 0, weight2: 0, weight3: 0},
