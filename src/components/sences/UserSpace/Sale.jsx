@@ -24,6 +24,7 @@ const initialValues = {
 }
 
 const saleSchema = yup.object().shape({
+  buyerName: yup.string().required('required'),
   price: yup.number().required('required'),
   weight: yup.object().shape(
     {
